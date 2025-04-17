@@ -1,0 +1,79 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  background-color: #f5f5dc; /* Soft Beige */
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Default text color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #228b22; /* Forest Green for headers */
+  font-family: 'Playfair Display', serif;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: rgb(0, 153, 255); /* Light Sky Blue */
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #5ab4e6; /* Slightly darker on hover */
+}
+
+/* Highlights */
+.highlight {
+  background-color: #ffd700; /* Warm Yellow */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Navigation */
+.navbar, header {
+  background-color: #228b22; /* Forest Green for header/navbar */
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important; /* Warm Yellow on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #228b22;
+  color: white;
+}
+
+/* Cards (like for pets) */
+.animal-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .highlight {
+      padding: 0.5rem;
+  }
+  .animal-card {
+      margin-bottom: 15px;
+  }
+}
