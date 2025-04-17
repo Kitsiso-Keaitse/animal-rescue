@@ -1,40 +1,59 @@
-/* styles.css */
 
-/* Global Styles */
+
+/* To ensure the HTML and body take up full height */
+html, body {
+  height: 100%;
+  margin: 0; 
+}
+
 body {
-  background-color: #f5f5dc; /* Soft Beige */
+  background-color: #f5f5dc; 
   font-family: 'Lora', serif;
-  margin: 0;
   padding: 0;
-  color: #333; /* Default text color */
+  color: #333; 
+
+  /* for Body to take up the remaining space */
+  display: flex;
+  flex-direction: column; /* to stack the content vertically */  
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #228b22; /* Forest Green for headers */
+  color: #228b22; 
   font-family: 'Playfair Display', serif;
 }
 
+/* To ensure the content area grows to take space */
+main {
+  flex: 1;
+}
+
 /* Buttons */
+
+.btn-primary, .nav-link, .animal-card {
+  transition: all 0.3s ease;
+}
+
+
 .btn-primary {
-  background-color: rgb(0, 153, 255); /* Light Sky Blue */
+  background-color: rgb(0, 153, 255);
   border: none;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #5ab4e6; /* Slightly darker on hover */
+  background-color: #5ab4e6; 
 }
 
 /* Highlights */
 .highlight {
-  background-color: #ffd700; /* Warm Yellow */
+  background-color: #ffd700; 
   padding: 1rem;
   border-radius: 10px;
 }
 
 /* Navigation */
 .navbar, header {
-  background-color: #228b22; /* Forest Green for header/navbar */
+  background-color: #228b22; 
 }
 
 .nav-link {
@@ -42,16 +61,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  color: #ffd700 !important; /* Warm Yellow on hover */
+  color: #ffd700 !important; 
 }
 
 /* Footer */
 footer {
   background-color: #228b22;
   color: white;
+  text-align: center;
+  padding: 1rem 0; /* To keep footer at the bottom */
 }
 
-/* Cards (like for pets) */
+/* Cards */
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.animal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 .animal-card {
   background-color: white;
   border: 1px solid #ddd;
@@ -77,3 +109,4 @@ img {
       margin-bottom: 15px;
   }
 }
+
